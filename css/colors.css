@@ -167,7 +167,7 @@ hr {
   background-color: #efefef;
   padding: 5px;
   position: relative;
-  left: 15%; }
+  margin: 0 auto; }
 
 dl {
   display: flex;
