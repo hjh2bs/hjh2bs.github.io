@@ -159,6 +159,7 @@ hr {
   -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
   -webkit-transition: box-shadow .2s ease-out; }
 
+/*Skills Section*/
 .container {
   min-width: 570px;
   width: 50%;
@@ -166,56 +167,789 @@ hr {
   background-color: #efefef;
   padding: 5px;
   position: relative;
-  left: 26%; }
+  left: 15%; }
 
-.block {
-  position: absolute;
-  top: 10%;
-  height: 80%;
-  width: 100%; }
-
-.line {
-  display: inline-block;
-  width: 100%;
-  vertical-align: middle;
-  margin-top: 2%; }
-
-.line p {
-  color: #0d0d00;
-  font-family: "Space Mono", monospace;
-  margin: 0;
-  float: left;
-  font-size: 13px; }
-
-.ruler {
-  float: left;
-  margin: 0;
-  background-color: #0d0d00;
-  position: absolute;
-  margin-top: 8px;
-  margin-left: 105px;
-  width: 2%;
-  height: 5px;
-  -webkit-transition: width 0.2s ease-in-out; }
-
-.x-column {
+dl {
+  display: flex;
   background-color: #efefef;
-  margin-left: 95px;
-  margin-top: 30px;
-  min-width: 500px; }
+  flex-direction: column;
+  min-width: 650px;
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  padding: 20px; }
 
-.x-column p {
-  float: left;
+dt {
+  align-self: flex-start;
+  background-color: #efefef;
+  width: 100%;
+  font-weight: 500;
   font-family: "Space Mono", monospace;
-  font-size: 13px; }
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 130px; }
 
-.vertical {
-  height: 478px;
-  border-left: solid #0d0d00;
-  float: left;
-  margin-top: 50px;
-  padding-right: 40px; }
+.s-1 {
+  margin-left: 1%; }
 
+.s-2 {
+  margin-left: 2%; }
+
+.s-3 {
+  margin-left: 3%; }
+
+.s-4 {
+  margin-left: 4%; }
+
+.s-5 {
+  margin-left: 5%; }
+
+.s-6 {
+  margin-left: 6%; }
+
+.s-7 {
+  margin-left: 7%; }
+
+.s-8 {
+  margin-left: 8%; }
+
+.s-9 {
+  margin-left: 9%; }
+
+.s-10 {
+  margin-left: 10%; }
+
+.text {
+  font-weight: 500;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 130px;
+  position: absolute;
+  left: 0;
+  justify-content: flex-end; }
+
+.percentage {
+  font-size: .8em;
+  line-height: 1;
+  width: 100%;
+  height: 30px;
+  margin-left: 130px;
+  background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #efefef 1px, #efefef 20%); }
+  .percentage:after {
+    content: "";
+    display: block;
+    background-color: #000000;
+    width: 5%;
+    margin-bottom: 10px;
+    height: 10%;
+    position: relative;
+    top: 70%;
+    transform: translateY(-50%);
+    -webkit-transition: width 0.2s ease-in-out; }
+
+.percentage-1:after {
+  width: 10%; }
+.percentage-1.grow:after {
+  width: 1%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 10000ms; }
+
+.percentage-2:after {
+  width: 10%; }
+.percentage-2.grow:after {
+  width: 2%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 5000ms; }
+
+.percentage-3:after {
+  width: 10%; }
+.percentage-3.grow:after {
+  width: 3%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 3333.33333ms; }
+
+.percentage-4:after {
+  width: 10%; }
+.percentage-4.grow:after {
+  width: 4%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 2500ms; }
+
+.percentage-5:after {
+  width: 10%; }
+.percentage-5.grow:after {
+  width: 5%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 2000ms; }
+
+.percentage-6:after {
+  width: 10%; }
+.percentage-6.grow:after {
+  width: 6%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 1666.66667ms; }
+
+.percentage-7:after {
+  width: 10%; }
+.percentage-7.grow:after {
+  width: 7%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 1428.57143ms; }
+
+.percentage-8:after {
+  width: 10%; }
+.percentage-8.grow:after {
+  width: 8%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 1250ms; }
+
+.percentage-9:after {
+  width: 10%; }
+.percentage-9.grow:after {
+  width: 9%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 1111.11111ms; }
+
+.percentage-10:after {
+  width: 10%; }
+.percentage-10.grow:after {
+  width: 10%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 1000ms; }
+
+.percentage-11:after {
+  width: 10%; }
+.percentage-11.grow:after {
+  width: 11%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 909.09091ms; }
+
+.percentage-12:after {
+  width: 10%; }
+.percentage-12.grow:after {
+  width: 12%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 833.33333ms; }
+
+.percentage-13:after {
+  width: 10%; }
+.percentage-13.grow:after {
+  width: 13%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 769.23077ms; }
+
+.percentage-14:after {
+  width: 10%; }
+.percentage-14.grow:after {
+  width: 14%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 714.28571ms; }
+
+.percentage-15:after {
+  width: 10%; }
+.percentage-15.grow:after {
+  width: 15%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 666.66667ms; }
+
+.percentage-16:after {
+  width: 10%; }
+.percentage-16.grow:after {
+  width: 16%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 625ms; }
+
+.percentage-17:after {
+  width: 10%; }
+.percentage-17.grow:after {
+  width: 17%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 588.23529ms; }
+
+.percentage-18:after {
+  width: 10%; }
+.percentage-18.grow:after {
+  width: 18%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 555.55556ms; }
+
+.percentage-19:after {
+  width: 10%; }
+.percentage-19.grow:after {
+  width: 19%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 526.31579ms; }
+
+.percentage-20:after {
+  width: 10%; }
+.percentage-20.grow:after {
+  width: 20%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 500ms; }
+
+.percentage-21:after {
+  width: 10%; }
+.percentage-21.grow:after {
+  width: 21%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 476.19048ms; }
+
+.percentage-22:after {
+  width: 10%; }
+.percentage-22.grow:after {
+  width: 22%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 454.54545ms; }
+
+.percentage-23:after {
+  width: 10%; }
+.percentage-23.grow:after {
+  width: 23%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 434.78261ms; }
+
+.percentage-24:after {
+  width: 10%; }
+.percentage-24.grow:after {
+  width: 24%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 416.66667ms; }
+
+.percentage-25:after {
+  width: 10%; }
+.percentage-25.grow:after {
+  width: 25%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 400ms; }
+
+.percentage-26:after {
+  width: 10%; }
+.percentage-26.grow:after {
+  width: 26%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 384.61538ms; }
+
+.percentage-27:after {
+  width: 10%; }
+.percentage-27.grow:after {
+  width: 27%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 370.37037ms; }
+
+.percentage-28:after {
+  width: 10%; }
+.percentage-28.grow:after {
+  width: 28%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 357.14286ms; }
+
+.percentage-29:after {
+  width: 10%; }
+.percentage-29.grow:after {
+  width: 29%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 344.82759ms; }
+
+.percentage-30:after {
+  width: 10%; }
+.percentage-30.grow:after {
+  width: 30%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 333.33333ms; }
+
+.percentage-31:after {
+  width: 10%; }
+.percentage-31.grow:after {
+  width: 31%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 322.58065ms; }
+
+.percentage-32:after {
+  width: 10%; }
+.percentage-32.grow:after {
+  width: 32%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 312.5ms; }
+
+.percentage-33:after {
+  width: 10%; }
+.percentage-33.grow:after {
+  width: 33%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 303.0303ms; }
+
+.percentage-34:after {
+  width: 10%; }
+.percentage-34.grow:after {
+  width: 34%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 294.11765ms; }
+
+.percentage-35:after {
+  width: 10%; }
+.percentage-35.grow:after {
+  width: 35%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 285.71429ms; }
+
+.percentage-36:after {
+  width: 10%; }
+.percentage-36.grow:after {
+  width: 36%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 277.77778ms; }
+
+.percentage-37:after {
+  width: 10%; }
+.percentage-37.grow:after {
+  width: 37%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 270.27027ms; }
+
+.percentage-38:after {
+  width: 10%; }
+.percentage-38.grow:after {
+  width: 38%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 263.15789ms; }
+
+.percentage-39:after {
+  width: 10%; }
+.percentage-39.grow:after {
+  width: 39%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 256.41026ms; }
+
+.percentage-40:after {
+  width: 10%; }
+.percentage-40.grow:after {
+  width: 40%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 250ms; }
+
+.percentage-41:after {
+  width: 10%; }
+.percentage-41.grow:after {
+  width: 41%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 243.90244ms; }
+
+.percentage-42:after {
+  width: 10%; }
+.percentage-42.grow:after {
+  width: 42%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 238.09524ms; }
+
+.percentage-43:after {
+  width: 10%; }
+.percentage-43.grow:after {
+  width: 43%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 232.55814ms; }
+
+.percentage-44:after {
+  width: 10%; }
+.percentage-44.grow:after {
+  width: 44%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 227.27273ms; }
+
+.percentage-45:after {
+  width: 10%; }
+.percentage-45.grow:after {
+  width: 45%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 222.22222ms; }
+
+.percentage-46:after {
+  width: 10%; }
+.percentage-46.grow:after {
+  width: 46%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 217.3913ms; }
+
+.percentage-47:after {
+  width: 10%; }
+.percentage-47.grow:after {
+  width: 47%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 212.76596ms; }
+
+.percentage-48:after {
+  width: 10%; }
+.percentage-48.grow:after {
+  width: 48%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 208.33333ms; }
+
+.percentage-49:after {
+  width: 10%; }
+.percentage-49.grow:after {
+  width: 49%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 204.08163ms; }
+
+.percentage-50:after {
+  width: 10%; }
+.percentage-50.grow:after {
+  width: 50%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 200ms; }
+
+.percentage-51:after {
+  width: 10%; }
+.percentage-51.grow:after {
+  width: 51%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 196.07843ms; }
+
+.percentage-52:after {
+  width: 10%; }
+.percentage-52.grow:after {
+  width: 52%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 192.30769ms; }
+
+.percentage-53:after {
+  width: 10%; }
+.percentage-53.grow:after {
+  width: 53%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 188.67925ms; }
+
+.percentage-54:after {
+  width: 10%; }
+.percentage-54.grow:after {
+  width: 54%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 185.18519ms; }
+
+.percentage-55:after {
+  width: 10%; }
+.percentage-55.grow:after {
+  width: 55%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 181.81818ms; }
+
+.percentage-56:after {
+  width: 10%; }
+.percentage-56.grow:after {
+  width: 56%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 178.57143ms; }
+
+.percentage-57:after {
+  width: 10%; }
+.percentage-57.grow:after {
+  width: 57%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 175.4386ms; }
+
+.percentage-58:after {
+  width: 10%; }
+.percentage-58.grow:after {
+  width: 58%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 172.41379ms; }
+
+.percentage-59:after {
+  width: 10%; }
+.percentage-59.grow:after {
+  width: 59%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 169.49153ms; }
+
+.percentage-60:after {
+  width: 10%; }
+.percentage-60.grow:after {
+  width: 60%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 166.66667ms; }
+
+.percentage-61:after {
+  width: 10%; }
+.percentage-61.grow:after {
+  width: 61%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 163.93443ms; }
+
+.percentage-62:after {
+  width: 10%; }
+.percentage-62.grow:after {
+  width: 62%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 161.29032ms; }
+
+.percentage-63:after {
+  width: 10%; }
+.percentage-63.grow:after {
+  width: 63%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 158.73016ms; }
+
+.percentage-64:after {
+  width: 10%; }
+.percentage-64.grow:after {
+  width: 64%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 156.25ms; }
+
+.percentage-65:after {
+  width: 10%; }
+.percentage-65.grow:after {
+  width: 65%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 153.84615ms; }
+
+.percentage-66:after {
+  width: 10%; }
+.percentage-66.grow:after {
+  width: 66%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 151.51515ms; }
+
+.percentage-67:after {
+  width: 10%; }
+.percentage-67.grow:after {
+  width: 67%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 149.25373ms; }
+
+.percentage-68:after {
+  width: 10%; }
+.percentage-68.grow:after {
+  width: 68%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 147.05882ms; }
+
+.percentage-69:after {
+  width: 10%; }
+.percentage-69.grow:after {
+  width: 69%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 144.92754ms; }
+
+.percentage-70:after {
+  width: 10%; }
+.percentage-70.grow:after {
+  width: 70%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 142.85714ms; }
+
+.percentage-71:after {
+  width: 10%; }
+.percentage-71.grow:after {
+  width: 71%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 140.84507ms; }
+
+.percentage-72:after {
+  width: 10%; }
+.percentage-72.grow:after {
+  width: 72%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 138.88889ms; }
+
+.percentage-73:after {
+  width: 10%; }
+.percentage-73.grow:after {
+  width: 73%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 136.9863ms; }
+
+.percentage-74:after {
+  width: 10%; }
+.percentage-74.grow:after {
+  width: 74%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 135.13514ms; }
+
+.percentage-75:after {
+  width: 10%; }
+.percentage-75.grow:after {
+  width: 75%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 133.33333ms; }
+
+.percentage-76:after {
+  width: 10%; }
+.percentage-76.grow:after {
+  width: 76%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 131.57895ms; }
+
+.percentage-77:after {
+  width: 10%; }
+.percentage-77.grow:after {
+  width: 77%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 129.87013ms; }
+
+.percentage-78:after {
+  width: 10%; }
+.percentage-78.grow:after {
+  width: 78%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 128.20513ms; }
+
+.percentage-79:after {
+  width: 10%; }
+.percentage-79.grow:after {
+  width: 79%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 126.58228ms; }
+
+.percentage-80:after {
+  width: 10%; }
+.percentage-80.grow:after {
+  width: 80%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 125ms; }
+
+.percentage-81:after {
+  width: 10%; }
+.percentage-81.grow:after {
+  width: 81%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 123.45679ms; }
+
+.percentage-82:after {
+  width: 10%; }
+.percentage-82.grow:after {
+  width: 82%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 121.95122ms; }
+
+.percentage-83:after {
+  width: 10%; }
+.percentage-83.grow:after {
+  width: 83%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 120.48193ms; }
+
+.percentage-84:after {
+  width: 10%; }
+.percentage-84.grow:after {
+  width: 84%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 119.04762ms; }
+
+.percentage-85:after {
+  width: 10%; }
+.percentage-85.grow:after {
+  width: 85%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 117.64706ms; }
+
+.percentage-86:after {
+  width: 10%; }
+.percentage-86.grow:after {
+  width: 86%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 116.27907ms; }
+
+.percentage-87:after {
+  width: 10%; }
+.percentage-87.grow:after {
+  width: 87%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 114.94253ms; }
+
+.percentage-88:after {
+  width: 10%; }
+.percentage-88.grow:after {
+  width: 88%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 113.63636ms; }
+
+.percentage-89:after {
+  width: 10%; }
+.percentage-89.grow:after {
+  width: 89%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 112.35955ms; }
+
+.percentage-90:after {
+  width: 10%; }
+.percentage-90.grow:after {
+  width: 90%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 111.11111ms; }
+
+.percentage-91:after {
+  width: 10%; }
+.percentage-91.grow:after {
+  width: 91%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 109.89011ms; }
+
+.percentage-92:after {
+  width: 10%; }
+.percentage-92.grow:after {
+  width: 92%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 108.69565ms; }
+
+.percentage-93:after {
+  width: 10%; }
+.percentage-93.grow:after {
+  width: 93%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 107.52688ms; }
+
+.percentage-94:after {
+  width: 10%; }
+.percentage-94.grow:after {
+  width: 94%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 106.38298ms; }
+
+.percentage-95:after {
+  width: 10%; }
+.percentage-95.grow:after {
+  width: 95%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 105.26316ms; }
+
+.percentage-96:after {
+  width: 10%; }
+.percentage-96.grow:after {
+  width: 96%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 104.16667ms; }
+
+.percentage-97:after {
+  width: 10%; }
+.percentage-97.grow:after {
+  width: 97%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 103.09278ms; }
+
+.percentage-98:after {
+  width: 10%; }
+.percentage-98.grow:after {
+  width: 98%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 102.04082ms; }
+
+.percentage-99:after {
+  width: 10%; }
+.percentage-99.grow:after {
+  width: 99%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 101.0101ms; }
+
+.percentage-100:after {
+  width: 10%; }
+.percentage-100.grow:after {
+  width: 100%;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition-delay: 100ms; }
+
+/*Projects Section */
 .project-1 {
   color: #0d0d00;
   font-family: "Space Mono", monospace;
