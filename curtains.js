@@ -1,3 +1,7 @@
+$(window).on('load', function() {
+    $("#cover").fadeOut(2000);
+});
+
 $(document).ready(function(){
  
 
@@ -151,14 +155,17 @@ $('.about').on('click', function(){
   var app;
 
   $(document).ready(function() {
-    return app.init();
+    return window.setTimeout(function(){
+        return app.init();
+    }, 1700);
+    
   });
 
   app = {
     text: "Hello, welcome to my website",
     index: 0,
     chars: 0,
-    speed: 100,
+    speed: 80,
     container: ".text .content",
     init: function() {
       this.chars = this.text.length;
@@ -168,6 +175,12 @@ $('.about').on('click', function(){
       $(this.container).append(this.text[this.index]);
       if (this.index < this.chars) {
         this.index++;
+        if(this.index == 6){
+            this.speed = 1000;
+        }
+        else if (this.index>6){
+            this.speed = 70;
+        }
         return window.setTimeout(function() {
           return app.write();
         }, this.speed);
