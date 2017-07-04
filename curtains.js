@@ -154,10 +154,10 @@ $('.about').on('click', function(){
 (function() {
   var app;
 
-  $(document).ready(function() {
+  $(window).on('load', function() {
     return window.setTimeout(function(){
         return app.init();
-    }, 1700);
+    }, 2500);
     
   });
 
