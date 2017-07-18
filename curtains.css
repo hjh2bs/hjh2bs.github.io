@@ -281,40 +281,51 @@ hr {
   min-height:1000px;
   position: relative;
 }
-.project-1 {
-  color: #0d0d00;
-  font-family: "Space Mono", monospace;
-  position: absolute;
-  margin: 0;
-  float: left;
-  top: 14%;
-  left: 32%;
-  width: 20%;
-  min-width: 500px; }
 
-.project-2 {
-  color: #0d0d00;
-  font-family: "Space Mono", monospace;
-  position: absolute;
-  margin: 0;
-  float: left;
-  top: 0%;
-  left: 32%;
-  width: 20%;
-  min-width: 500px; }
+a{
+  text-decoration: none;
+  color: #0d0d00;;
+}
 
-  .mytd-img {
-  top: 20%;
-  left: 10%;
-  width: 220px;
-  height: 220px;
-  position: absolute;
-  float: left;
-  -webkit-transition: box-shadow .2s ease-out; }
+.card{
+  width:60%;
+  min-width: 500px;
+  height: 25%;
+  min-height: 200px;
+  border: solid 2px;
+  margin-top: 5%;
+  margin-left: 20%;
+  position: relative;
+  -webkit-transition: box-shadow .2s ease-out;
+  transform: translateX(-180%);
+  transition: all 700ms cubic-bezier(1.000, -0.250, 0.065, 1.255);
+}
 
-.mytd-img:hover {
+  .card:hover {
   -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
   -webkit-transition: box-shadow .2s ease-out; }
+
+.card-2{
+  transform: translateX(180%);
+}
+.cclick{
+  transform: translateX(0);
+}
+
+  .mytd-img {
+  width: 36%;
+  height: 100%;
+  position: absolute;
+  }
+
+  .project-1 {
+  color: #0d0d00;
+  font-family: "Space Mono", monospace;
+  width: 61%;
+  position: relative;
+  margin-left:37%;
+  font-size: 15px;
+  }
 
 .mytd-img-2 {
   top: 6%;

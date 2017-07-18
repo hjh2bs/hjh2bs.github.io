@@ -96,7 +96,9 @@ $('.about').on('click', function(){
         $('.s3').addClass('click');
         $('.s4').removeClass('click');
         $('.s5').removeClass('click');
-               
+        return window.setTimeout(function(){
+        $('.card').addClass('cclick'); 
+    }, 200);
         });
 
         $('.projects').on('click', function(){
@@ -106,6 +108,9 @@ $('.about').on('click', function(){
         $('.s3').addClass('click');
         $('.s4').removeClass('click');
         $('.s5').removeClass('click');
+            return window.setTimeout(function(){
+        $('.card').addClass('cclick'); 
+    }, 200);
                
 });
         $('.pr').on('click', function(){
@@ -115,7 +120,8 @@ $('.about').on('click', function(){
         $('.s3').addClass('click');
         $('.s4').addClass('click');
         $('.s5').removeClass('click');
-               
+
+              
         });
 
         $('.resume').on('click', function(){
