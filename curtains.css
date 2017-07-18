@@ -275,6 +275,7 @@ hr {
 	z-index: 2;
 	transition: all 500ms cubic-bezier(1.000, -0.250, 0.065, 1.255);
 	overflow-y: scroll;
+  overflow-x: hidden;
 }
 .projects-bg{
   min-height:1000px;
